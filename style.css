@@ -27,7 +27,7 @@ label {
     margin-bottom: 8px;
 }
 
-input[type="number"], input[type="text"], textarea {
+input[type="number"], input[type="text"], input[type="password"], textarea {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 10px;

@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f0f2f5;
+
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.printf {
+}
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
+
+
+nav {
+    background-color: #f0f2f5;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #444;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    background-color: white;
+    color: #0056b3;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #0056b3;
+    color: white;
+
+}
+
+nav a.active {
+    background-color: #0056b3;
+    color: white;
+
+}
+
+
+    .container {
+        display: flex;
+        flex: 1;
+    }
+main.main-content {
+
+    margin-left: 200px; /* Space for fixed nav */
+    padding: 20px;
+    width: calc(100% - 200px); /* Adjust width considering nav */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.chart-container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width:50%;
+    border-radius: 10px;
+    padding: 15px;
+}
+.tal{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width:80%;
+    border-radius: 10px;
+    padding: 35px;
+
+}
+.table-container, .chart-container {
+    margin-bottom: 20px;
+
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 10%;
+
+}
+
+table, th, td {
+
+    border-bottom: 1.5px solid whitesmoke;
+    border-top:0px;
+    border-left: 0px;
+
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+
+
+thead {
+    background-color: ;
+    color: #0056b3;
+}
+tbody{
+    font-size: 0.9em;
+    font-family: MyCustomFont', sans-serif;
+}
+.search-bar {
+    position: relative;
+    width: 90%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.pagination {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.pagination .page-numbers {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.pagination .page-numbers button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.pagination .page-numbers button.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination .page-numbers button.active {
+    background-color: #0056b3;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.pagination button.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

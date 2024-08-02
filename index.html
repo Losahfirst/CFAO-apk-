@@ -1,14 +1,6 @@
-<?php
-/*session_start();
-
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    header('Location: login.php');
-    exit;
-}
-*/?>
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,7 +98,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             overlay.style.display = 'flex';
         }
 
-        document.getElementById('overlay').addEventListener('click', function() {
+        document.getElementById('overlay').addEventListener('click', function () {
             var statusImageSrc = document.getElementById('statusImage').src;
 
             // Vérifie si l'image affichée est 'ok.png'
@@ -120,7 +112,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         });
 
 
-        <?php
+        <? php
         if (isset($_GET['status'])) {
             $status = $_GET['status'];
             switch ($status) {
